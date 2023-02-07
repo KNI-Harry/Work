@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='navstyle.css') }}">
+
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <head>
+        
+        <nav class="navbar">
+            <div class="brand-title">Workout Website</div>
+            <div class="navbar-links">
+              <ul>
+                <li><button class="btn"><a href="/" class="fa fa-home">Home</a></button>
+                <button class="btn"><a href="Forum" class="fa fa-bars">Forums</a></button>
+                <button class="btn"><a href="Plans" class="fa fa-folder">Plans</a></button>
+                <button class="btn"><a href="Sign_Up" class="fa fa-user-o">Sign_Up</a></button>
+                <button class="btn"><a href="login" class="fa fa-id-card">Login</a></button>
+              </ul>
+
+              
+            </div>
+        </nav>
+    </head>
+    {%block content%}
+    {%endblock content%}

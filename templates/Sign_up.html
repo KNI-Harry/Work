@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%extends 'layout.html' %}
+
+{%block content%}
+<html>
+
+    <head>
+
+        <form action="{{url_for('signup_res') }}" method="post" class="input-form">
+            <label for="Username" class="Username">Username</label> 
+            <input type="text" id="Username" name="Username" ><br><br>
+            <label for="Password" class="Password">Password</label> 
+            <input type="password" id="Password" name="Password" ><br><br>
+            <label for="email" class="Email">Email</label> 
+            <input type="email" id="Email" name="Email" ><br><br>
+            <input type="submit" value="Submit"> 
+        </form>
+
+    </head>
+
+</html>
+{% endblock content %}
