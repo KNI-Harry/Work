@@ -1,0 +1,28 @@
+<html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <head>
+        Type student name that you want to change then type the updated details
+    </head>
+    <body>
+        <form action = "{{url_for('editor') }}" method="post">
+
+            Name<br>
+            <input type = "text" name = "name" /></br>
+
+            UpdateName</br>
+            <input type = "text" name = "updatename"/></br>
+
+            UpdateAdress</br>
+            <input type = "text" name = "updateadr"/></br>
+
+            UpdateCity</br>
+            <input type = "text" name = "updatecity"/></br>
+
+            <input type = "submit" value = "submit" /><br>
+
+            
+        </form>
+        <h2><a href="\">Go back to home page</a></h2>
+
+    </body>
+</html>

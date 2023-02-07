@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Student Register</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        
+
+        <nav class="navbar">
+          <div class="brand-title">Student List</div>
+          <a href="#" class="toggle-button">
+            
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="enternew">Add Student</a></li>
+              <li><a href="editstu">Edit Student</a></li>
+              <li><a href="deletestu">Delete Student</a></li>
+            </ul>
+          </div>
+        </nav>
+      
+    </head>
+
+
+    <body>
+      <br>
+      <br>
+                <div id="main" class="clearfix">
+                <section id = "left">
+                <table>
+                    <thead>
+                        <td>Name</td>
+                        <td>Address</td>
+                        <td>city</td>
+                    </thead>
+        
+                    {% for row in rows %}
+                        <tr>
+                            <td>{{row["name"]}}</td>
+                            <td>{{row["addr"]}}</td>
+                            <td>{{row["city"]}}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+              </section>
+              </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </body>
+
+
+</html>

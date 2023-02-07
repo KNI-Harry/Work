@@ -1,0 +1,125 @@
+h2 :link{
+    color: #000000;
+}
+
+nav{
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 18pt;
+    
+}
+
+nav ul {
+    display: block;
+    list-style: none;
+    font-size: 5px;
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    float: left;
+    padding: 3px 6px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    width: block;
+    position: relative;
+    text-align: justify;
+    font-size: 10pt;
+    border-bottom: 1px dotted #000000;
+}
+
+nav ul li a:hover {
+    background: #01ffea;
+    color: #2109f1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 3px 6px;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* page main*/
+div#main {
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+section#left {
+    width: 50%;
+    float: center;
+    margin: 0 15px;
+    
+    border-radius: 50px;
+    background: #73ad21;
+    padding: 25px;
+    
+}
+
+section#right {
+    float: left;
+    width: 300px;
+}
+
+/* clearfix */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.tooltip {
+    border-bottom: 1px dotted #000000;
+    color: #000000; outline: none;
+    cursor: help; text-decoration: none;
+    position: relative;
+}
+
+.tooltip span {
+    margin-left: -999em;
+    position: absolute;
+}
+
+.tooltip span {
+    margin-left: -999em;
+    position: absolute;
+}
+
+.tooltip:hover span {
+    font-family: Calibri, Tahoma, Geneva, sans-serif;
+    position: absolute;
+    left: 1em;
+    top: 2em;
+    z-index: 99;
+    margin-left: 0;
+    width: 250px;
+    background: #ffffff;
+}
+
+h1
+{
+    text-shadow: 0 3px 0 rgba(137,127,127,.8);
+}
